@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sanity suite for Google]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="org.testng.suites.RetryLogicRuntime"/>
+  </listeners>
+  <test name="Default test(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="org.testng.suites.FacebookPage">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="google"/>
+        </methods>
+      </class> <!-- org.testng.suites.FacebookPage -->
+      <class name="org.testng.suites.GooglePage">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.testng.suites.GooglePage -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+  <test name="Default test1(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="org.testng.suites.FacebookPage">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="google"/>
+        </methods>
+      </class> <!-- org.testng.suites.FacebookPage -->
+      <class name="org.testng.suites.GooglePage">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.testng.suites.GooglePage -->
+    </classes>
+  </test> <!-- Default test1(failed) -->
+</suite> <!-- Failed suite [Sanity suite for Google] -->
